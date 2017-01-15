@@ -1,0 +1,72 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{nameref}
+\usepackage{subcaption}
+\usepackage{changepage}
+\usepackage{graphicx}
+\usepackage[usenames, dvipsnames]{color}
+\usepackage[a4paper,includeheadfoot,margin=3cm]{geometry}
+\usepackage[nottoc,numbib]{tocbibind}
+\newcommand{\bigcell}[2]{\begin{tabular}{@{}#1@{}}#2\end{tabular}}
+%\usepackage{titlesec}
+%\setcounter{secnumdepth}{4}
+\usepackage[table]{xcolor}
+
+\usepackage{floatrow}
+\DeclareFloatFont{tiny}{\scriptsize}% "scriptsize" is defined by floatrow, "tiny" not
+\floatsetup[table]{font=scriptsize}
+
+%\titleformat{\paragraph}
+%{\normalfont\normalsize\bfseries}{\theparagraph}{1em}{}
+%\titlespacing*{\paragraph}
+%{0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
+
+\bibliographystyle{vancouver}
+
+
+\title{Particle Filter based Object Detection\\
+	{\Large EL2320 Applied Estimation Project}}
+\author{Huijie Wang}
+\date{January 2016}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+	\par
+	In this project, a particle filter is implemented to track selected object in the video. Two methods of observation models are tested: single colour comparison and histogram based colour distribution model. As a result, the latter method to a large extend reduces the risk of lost tracking according to colour variance, as it is a more reliable way to represent real world object. However, it also shows to be sensitive to colour especially when illumination changes or background noises.
+\end{abstract}
+
+\section{Introduction}
+\par
+Object tracking is a typical computer vision problem, with regard to the problem of 
+
+\section{Background}
+
+\section{Methods}
+
+\subsection{Particle Filter}
+
+\subsection{Motion Model}
+As as 
+
+\subsection{Observation Model}
+\subsubsection{Single Colour model}
+
+\subsubsection{Colour distribution model}
+
+\subsection{Resampling}
+
+\section{Result}
+
+\section{Discussion}
+% Motion model
+
+% Color: should pay more attention on red
+
+	
+
+\bibliography{references}
+	
+\end{document}

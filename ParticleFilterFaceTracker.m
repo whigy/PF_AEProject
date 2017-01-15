@@ -103,12 +103,12 @@ for i = startFrameNum : endFrameNum
     % Showing Image
     
     figure(1)
-    
+    imshow(frame);
     if flag ~=0
         hold on
-        %plot(particle(1, :)+ 0.5 * w, particle(2,:)+ 0.5 * h, 'b.');
-        frame(int16(particle(1, :)+ 0.5 * w), int16(particle(2,:)+ 0.5 * h), : ) = repmat([0, 0, 255]', 1, m);
-        imshow(frame);
+        plot(particle(1, :)+ 0.5 * w, particle(2,:)+ 0.5 * h, 'b.');
+        %frame(int16(particle(1, :)+ 0.5 * w), int16(particle(2,:)+ 0.5 * h), : ) = repmat([0, 0, 255]', 1, m);
+        
         axis([0,size(frame,2),0,size(frame,1)])
         hold off
 %         writeVideo(myObj,frame);

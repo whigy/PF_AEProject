@@ -1,5 +1,5 @@
 function [ yuv ] = rgb2yuv( img )
-
+size(img)
 R = img(:,:,1); 
 G = img(:,:,2); 
 B = img(:,:,3);
